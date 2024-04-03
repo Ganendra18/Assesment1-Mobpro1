@@ -3,6 +3,9 @@
     <string name="sewa_intro">TRAVWITOR (Travelling With Motor) adalah aplikasi sewa motor dimana kamu dapat menyewa berbagai
         macam motor, mulai dari matic, bebek, sampai kopling di berbagai kota di Indonesia untuk berbagai
         macam aktivitas kamu hanya dalam satu aplikasi.</string>
+    <string name="tentang_aplikasi">Tentang Aplikasi</string>
+    <string name="copyright">Aplikasi TRAVWITOR dibuat oleh Ganendra Kalla Radhya. Aplikasi ini dibuat
+        untuk keperluan Assesment 1 Mobpro.\n\nCopyright © 2024 All Rights Reserved.</string>
 
     <string name="nama_penyewa">Nama Penyewa</string>
     <string name="imput_invalid">Tidak Boleh Kosong Mas Bro!</string>
