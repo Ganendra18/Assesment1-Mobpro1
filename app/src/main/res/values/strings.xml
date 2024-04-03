@@ -5,8 +5,21 @@
         macam aktivitas kamu hanya dalam satu aplikasi.</string>
     <string name="nama_penyewa">Nama Penyewa</string>
     <string name="lama_sewa">Lama Menyewa</string>
-    <string name="tombol_cari">Cari</string>
+    <string name="tombol_print">Print</string>
+
     <string name="honda">Honda</string>
     <string name="yamaha">Yamaha</string>
-    <string name="suzuki">Suzuki</string>
+
+    <string name="matic">Matic</string>
+    <string name="bebek">Bebek</string>
+    <string name="kopling">Kopling</string>
+    <string name="hasil_pilihan_motor">Pilihan Motor:\n%s</string>
+
+    <string name="motor_honda_matic">Berikut pilihan untuk motor Honda Matic :\n\n1. Honda Vario\n2. Honda Beat\n3. Honda Scoopy</string>
+    <string name="motor_honda_bebek">Berikut pilihan untuk motor Honda Bebek :\n\n1. Honda Supra X\n2. Honda Revo\n3. Honda Supra GTR</string>
+    <string name="motor_honda_kopling">Berikut pilihan untuk motor Honda Kopling:\n\n1. Honda Sonic\n2. Honda CBR\n3. Honda CRF </string>
+
+    <string name="motor_yamaha_matic">Berikut pilihan untuk motor Yamaha Matic :\n\n1. Yamaha FreeGo\n2. Yamaha Mio\n3. Yamaha Fino</string>
+    <string name="motor_yamaha_bebek">Berikut pilihan untuk motor Yamaha Bebek :\n\n1. Yamaha MX King\n2. Yamaha Jupiter\n3. Yamaha Vega Force</string>
+    <string name="motor_yamaha_kopling">Berikut pilihan untuk motor Yamaha Kopling :\n\n1. Yamaha XSR\n2. Yamaha R15\n3. Yamaha Vixion</string>
 </resources>
