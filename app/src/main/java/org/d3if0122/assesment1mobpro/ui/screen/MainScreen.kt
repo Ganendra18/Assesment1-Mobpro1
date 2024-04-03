@@ -1,6 +1,7 @@
 package org.d3if0122.assesment1mobpro.ui.screen
 
 import android.content.Context
+import android.content.Intent
 import android.content.res.Configuration
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
@@ -88,6 +89,8 @@ fun MainScreen(navController: NavHostController){
 @Composable
 fun ScreenContent(modifier: Modifier){
     val list = listOf("Matic", "Bebek", "Kopling")
+    var inputanPengguna by rememberSaveable { mutableStateOf("") }
+    var isCetakClicked by rememberSaveable { mutableStateOf(false) } // Menunjukkan apakah tombol "Cetak" sudah ditekan atau belum
 
     var nama by rememberSaveable { mutableStateOf("") }
     var namaError by rememberSaveable { mutableStateOf(false) }
@@ -228,12 +231,16 @@ fun ScreenContent(modifier: Modifier){
                 lamaHariError = (lamaHari == "" || lamaHari == "0")
                 if (namaError || lamaHariError) {
                     hasilText = ""
+                } else {
+                    inputanPengguna = "Nama: $nama\nLama Sewa: $lamaHari hari\nJenis Motor: $selectedText" +
+                            "\nMerk Motor: $merk\n\n$hasilText\n\nPilihan Kamu? : "
+                    isCetakClicked = true // Menandai bahwa tombol "Cetak" sudah ditekan
                 }
             },
             modifier = Modifier.padding(top = 8.dp),
             contentPadding = PaddingValues(horizontal = 32.dp, vertical = 16.dp)
         ) {
-            Text(text = stringResource(id = R.string.tombol_print))
+            Text(text = stringResource(id = R.string.tombol_cetak))
         }
 
         Text(
@@ -241,8 +248,35 @@ fun ScreenContent(modifier: Modifier){
             style = MaterialTheme.typography.bodyLarge,
             modifier = Modifier.fillMaxWidth()
         )
+
+        if (isCetakClicked) {
+            Button(
+                onClick = {
+                    if (inputanPengguna.isNotEmpty()) {
+                        shareData(context, inputanPengguna)
+                    }
+                },
+                modifier = Modifier.padding(top = 8.dp),
+                contentPadding = PaddingValues(horizontal = 32.dp, vertical = 16.dp)
+            ) {
+                Text(text = stringResource(id = R.string.bagikan))
+            }
+        }
     }
 
+}
+// Pada bagian fungsi shareData
+private fun shareData(
+    context: Context,
+    message: String
+) {
+    val shareIntent = Intent(Intent.ACTION_SEND).apply {
+        type = "text/plain"
+        putExtra(Intent.EXTRA_TEXT, message)
+    }
+    if (shareIntent.resolveActivity(context.packageManager) != null ) {
+        context.startActivity(shareIntent)
+    }
 }
 
 @Composable
