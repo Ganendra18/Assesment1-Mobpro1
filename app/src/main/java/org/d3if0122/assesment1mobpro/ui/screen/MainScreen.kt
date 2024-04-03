@@ -35,6 +35,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -88,13 +89,13 @@ fun MainScreen(navController: NavHostController){
 fun ScreenContent(modifier: Modifier){
     val list = listOf("Matic", "Bebek", "Kopling")
 
-    var nama by remember { mutableStateOf("") }
-    var namaError by remember { mutableStateOf(false) }
+    var nama by rememberSaveable { mutableStateOf("") }
+    var namaError by rememberSaveable { mutableStateOf(false) }
 
-    var lamaHari by remember { mutableStateOf("") }
-    var lamaHariError by remember { mutableStateOf(false) }
+    var lamaHari by rememberSaveable { mutableStateOf("") }
+    var lamaHariError by rememberSaveable { mutableStateOf(false) }
 
-    var hasilText by remember { mutableStateOf("") }
+    var hasilText by rememberSaveable { mutableStateOf("") }
     val context = LocalContext.current
 
     fun getMotorOptionsText(context: Context, jenis: String, merk: String):String {
