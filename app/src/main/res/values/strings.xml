@@ -3,9 +3,16 @@
     <string name="sewa_intro">TRAVWITOR (Travelling With Motor) adalah aplikasi sewa motor dimana kamu dapat menyewa berbagai
         macam motor, mulai dari matic, bebek, sampai kopling di berbagai kota di Indonesia untuk berbagai
         macam aktivitas kamu hanya dalam satu aplikasi.</string>
+
     <string name="nama_penyewa">Nama Penyewa</string>
+    <string name="imput_invalid">Tidak Boleh Kosong Mas Bro!</string>
+
     <string name="lama_sewa">Lama Menyewa</string>
     <string name="tombol_print">Print</string>
+
+    <string name="nama_error_message">Mohon masukkan nama penyewa</string>
+    <string name="lama_sewa_error_message">Mohon masukkan lama penyewaan</string>
+
 
     <string name="honda">Honda</string>
     <string name="yamaha">Yamaha</string>

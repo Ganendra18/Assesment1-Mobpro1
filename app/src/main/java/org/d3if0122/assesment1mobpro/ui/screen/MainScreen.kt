@@ -13,11 +13,14 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.selection.selectable
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Warning
 import androidx.compose.material3.Button
 import androidx.compose.material3.DropdownMenuItem
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.ExposedDropdownMenuBox
 import androidx.compose.material3.ExposedDropdownMenuDefaults
+import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.RadioButton
@@ -68,8 +71,12 @@ fun MainScreen(){
 @Composable
 fun ScreenContent(modifier: Modifier){
     val list = listOf("Matic", "Bebek", "Kopling")
+
     var nama by remember { mutableStateOf("") }
+    var namaError by remember { mutableStateOf(false) }
+
     var lamaHari by remember { mutableStateOf("") }
+    var lamaHariError by remember { mutableStateOf(false) }
 
     var hasilText by remember { mutableStateOf("") }
     val context = LocalContext.current
@@ -127,6 +134,8 @@ fun ScreenContent(modifier: Modifier){
             value = nama,
             onValueChange = { nama = it },
             label = { Text(text = stringResource(R.string.nama_penyewa)) },
+            isError = namaError,
+            supportingText = { ErrorHint(namaError) },
             singleLine = true,
             keyboardOptions = KeyboardOptions(
                 keyboardType = KeyboardType.Text,
@@ -138,7 +147,9 @@ fun ScreenContent(modifier: Modifier){
             value = lamaHari,
             onValueChange = { lamaHari = it },
             label = { Text(text = stringResource(R.string.lama_sewa)) },
-            trailingIcon = { Text(text = "Hari") },
+            isError = lamaHariError,
+            trailingIcon = { IconPicker( lamaHariError, "Hari" ) },
+            supportingText = { ErrorHint( lamaHariError ) },
             singleLine = true,
             keyboardOptions = KeyboardOptions(
                 keyboardType = KeyboardType.Number,
@@ -194,12 +205,20 @@ fun ScreenContent(modifier: Modifier){
             }
         }
         Button(
-            onClick = { hasilText = getMotorOptionsText(context, merk, selectedText) },
+            onClick = {
+                hasilText = getMotorOptionsText(context, merk, selectedText)
+                namaError = (nama == "" || nama == "0")
+                lamaHariError = (lamaHari == "" || lamaHari == "0")
+                if (namaError || lamaHariError) {
+                    hasilText = ""
+                }
+            },
             modifier = Modifier.padding(top = 8.dp),
             contentPadding = PaddingValues(horizontal = 32.dp, vertical = 16.dp)
         ) {
             Text(text = stringResource(id = R.string.tombol_print))
         }
+
         Text(
             text = hasilText,
             style = MaterialTheme.typography.bodyLarge,
@@ -208,7 +227,6 @@ fun ScreenContent(modifier: Modifier){
     }
 
 }
-
 
 @Composable
 private fun PilihanMotor(label: String, isSelected: Boolean, modifier: Modifier){
@@ -222,6 +240,22 @@ private fun PilihanMotor(label: String, isSelected: Boolean, modifier: Modifier)
             style = MaterialTheme.typography.bodyLarge,
             modifier = Modifier.padding(start = 8.dp)
         )
+    }
+}
+
+@Composable
+fun IconPicker(isError: Boolean, unit: String){
+    if(isError){
+        Icon(imageVector = Icons.Filled.Warning, contentDescription = null)
+    } else {
+        Text(text = unit)
+    }
+}
+
+@Composable
+fun ErrorHint(isError: Boolean){
+    if (isError){
+        Text(text = stringResource(id = R.string.imput_invalid))
     }
 }
 
