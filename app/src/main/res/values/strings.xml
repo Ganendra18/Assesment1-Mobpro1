@@ -1,14 +1,9 @@
 <resources>
     <string name="app_name">TRAVWITOR</string>
-    <string name="sewa_intro">TRAVWITOR (Travelling With Motor) adalah aplikasi sewa motor dimana kamu dapat menyewa berbagai
-        macam motor, mulai dari matic, bebek, sampai kopling di berbagai kota di Indonesia untuk berbagai
-        macam aktivitas kamu hanya dalam satu aplikasi. Ketentuan sewa motor ada di
-        Tentang Aplikasi (pojok kanan atas).</string>
+    <string name="sewa_intro">TRAVWITOR (Travelling With Motor) adalah aplikasi sewa motor dimana kamu dapat menyewa berbagai         macam motor, mulai dari matic, bebek, sampai kopling di berbagai kota di Indonesia untuk berbagai         macam aktivitas kamu hanya dalam satu aplikasi. Ketentuan sewa motor ada di         Tentang Aplikasi (pojok kanan atas).</string>
 
     <string name="tentang_aplikasi">Tentang Aplikasi</string>
-    <string name="copyright">Aplikasi TRAVWITOR dibuat oleh Ganendra Kalla Radhya. Aplikasi ini dibuat
-        untuk keperluan Assesment 1 Mobpro.\nKontak WA : 082136428374\nCopyright © 2024 All Rights Reserved.\n\nDokumen
-        yang harus ditunjukkan untuk keperluan sewa motor: \n1. SIM C\n2. STNK Pribadi\n3. KTP</string>
+    <string name="copyright">Aplikasi TRAVWITOR dibuat oleh Ganendra Kalla Radhya. Aplikasi ini dibuat         untuk keperluan Assesment 1 Mobpro. Kontak WA : 082136428374 Copyright © 2024 All Rights Reserved.  Dokumen         yang harus ditunjukkan untuk keperluan sewa motor:  1. SIM C 2. STNK Pribadi 3. KTP</string>
     <string name="kembali">Kembali</string>
 
     <string name="nama_penyewa">Nama Penyewa</string>
@@ -28,13 +23,13 @@
     <string name="matic">Matic</string>
     <string name="bebek">Bebek</string>
     <string name="kopling">Kopling</string>
-    <string name="hasil_pilihan_motor">Pilihan Motor:\n%s</string>
+    <string name="hasil_pilihan_motor">Pilihan Motor: %s</string>
 
-    <string name="motor_honda_matic">Berikut pilihan untuk motor Honda Matic :\n\n1. Honda Vario\n2. Honda Beat\n3. Honda Scoopy</string>
-    <string name="motor_honda_bebek">Berikut pilihan untuk motor Honda Bebek :\n\n1. Honda Supra X\n2. Honda Revo\n3. Honda Supra GTR</string>
-    <string name="motor_honda_kopling">Berikut pilihan untuk motor Honda Kopling:\n\n1. Honda Sonic\n2. Honda CBR\n3. Honda CRF </string>
+    <string name="motor_honda_matic">Berikut pilihan untuk motor Honda Matic :  1. Honda Vario 2. Honda Beat 3. Honda Scoopy</string>
+    <string name="motor_honda_bebek">Berikut pilihan untuk motor Honda Bebek :  1. Honda Supra X 2. Honda Revo 3. Honda Supra GTR</string>
+    <string name="motor_honda_kopling">"Berikut pilihan untuk motor Honda Kopling:  1. Honda Sonic 2. Honda CBR 3. Honda CRF "</string>
 
-    <string name="motor_yamaha_matic">Berikut pilihan untuk motor Yamaha Matic :\n\n1. Yamaha FreeGo\n2. Yamaha Mio\n3. Yamaha Fino</string>
-    <string name="motor_yamaha_bebek">Berikut pilihan untuk motor Yamaha Bebek :\n\n1. Yamaha MX King\n2. Yamaha Jupiter\n3. Yamaha Vega Force</string>
-    <string name="motor_yamaha_kopling">Berikut pilihan untuk motor Yamaha Kopling :\n\n1. Yamaha XSR \n2. Yamaha R15 \n3. Yamaha Vixion</string>
+    <string name="motor_yamaha_matic">Berikut pilihan untuk motor Yamaha Matic :  1. Yamaha FreeGo 2. Yamaha Mio 3. Yamaha Fino</string>
+    <string name="motor_yamaha_bebek">Berikut pilihan untuk motor Yamaha Bebek :  1. Yamaha MX King 2. Yamaha Jupiter 3. Yamaha Vega Force</string>
+    <string name="motor_yamaha_kopling">Berikut pilihan untuk motor Yamaha Kopling :  1. Yamaha XSR  2. Yamaha R15  3. Yamaha Vixion</string>
 </resources>

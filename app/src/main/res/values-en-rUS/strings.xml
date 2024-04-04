@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TRAVWITOR</string>
+    <string name="sewa_intro">TRAVWITOR (Traveling With Motor) is a motorbike rental application where you can rent various kinds of motorbikes, from automatic, moped, to clutch in various cities in Indonesia for your various activities in just one application. Motorbike rental conditions are in About the Application (top right corner).</string>
+    <string name="tentang_aplikasi">About Application</string>
+    <string name="copyright">The TRAVWITOR application was created by Ganendra Kalla Radhya. This application was created for the purposes of Assessment 1 Mobpro. Contact WA: 082136428374 Copyright © 2024 All Rights Reserved. Documents that must be shown for motorbike rental purposes: 1. SIM C 2. Personal STNK 3. KTP</string>
+    <string name="kembali">Back</string>
+    <string name="nama_penyewa">Tenant Name</string>
+    <string name="imput_invalid">You can\'t leave it empty, bro / sis!</string>
+    <string name="bagikan">Next</string>
+    <string name="lama_sewa">Length of Rent</string>
+    <string name="tombol_cetak">Print</string>
+    <string name="nama_error_message">Please enter the name of the renter</string>
+    <string name="lama_sewa_error_message">Please enter the length of rental</string>
+    <string name="honda">Honda</string>
+    <string name="yamaha">Yamaha</string>
+    <string name="matic">Matic</string>
+    <string name="bebek">Moped</string>
+    <string name="kopling">Clutch</string>
+    <string name="hasil_pilihan_motor">Motorbike Selection: %s</string>
+    <string name="motor_honda_matic">The following are the choices for Honda Matic motorbikes: 1. Honda Vario 2. Honda Beat 3. Honda Scoopy</string>
+    <string name="motor_honda_bebek">The following are the choices for the Honda Moped motorbike: 1. Honda Supra X 2. Honda Revo 3. Honda Supra GTR</string>
+    <string name="motor_honda_kopling">The following are the choices for Honda Clutch motorbikes: 1. Honda Sonic 2. Honda CBR 3. Honda CRF</string>
+    <string name="motor_yamaha_matic">The following are the options for Yamaha Matic motorbikes: 1. Yamaha FreeGo 2. Yamaha Mio 3. Yamaha Fino</string>
+    <string name="motor_yamaha_bebek">The following are the choices for the Yamaha Moped motorbike: 1. Yamaha MX King 2. Yamaha Jupiter 3. Yamaha Vega Force</string>
+    <string name="motor_yamaha_kopling">The following are the options for Yamaha Clutch motorbikes: 1. Yamaha XSR 2. Yamaha R15 3. Yamaha Vixion</string>
+</resources>
